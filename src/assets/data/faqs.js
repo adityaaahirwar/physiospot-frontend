@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: "What is your medical care?",
+    question: "What conditions do you treat?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "PhysioSpot provides care for back pain, neck pain, sports injuries, post-surgery recovery, posture issues, neurological conditions, and more. Our goal is to help you move better and recover faster.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "Do I need a doctor’s referral for physiotherapy?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "In most cases, you can book an appointment directly with PhysioSpot without a referral. However, some insurance providers may require one—please check your policy for details.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "How long does a physiotherapy session last?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "A typical physiotherapy session at PhysioSpot lasts between 30–45 minutes, depending on your treatment plan and recovery needs.",
   },
   {
-    question: "Can I visit your medical office?",
+    question: "Do you offer online or virtual physiotherapy?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Yes, PhysioSpot offers secure virtual physiotherapy sessions. You can connect with our experts online for guided exercises, posture correction, and pain management advice from home.",
   },
   {
-    question: "Does you provide urgent care?",
+    question: "How many sessions will I need?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "The number of physiotherapy sessions depends on your condition, recovery goals, and progress. Our physiotherapists create personalized treatment plans and adjust them as you improve.",
   },
 ];

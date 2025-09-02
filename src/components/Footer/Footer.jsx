@@ -9,99 +9,73 @@ import {
 
 const socialLinks = [
   {
-    path: "https://www.youtube.com/c/CodingWithMuhib",
+    path: "https://www.youtube.com/@PhysioSpot",
     icon: <AiFillYoutube className="group-hover:text-white w-4 h-5" />,
   },
   {
-    path: "https://github.com/codingwithmuhib",
+    path: "https://github.com/physiospott",
     icon: <AiFillGithub className="group-hover:text-white w-4 h-5" />,
   },
   {
-    path: "https://www.instagram.com/muhib160.official/",
+    path: "https://www.instagram.com/physiospott/",
     icon: <AiOutlineInstagram className="group-hover:text-white w-4 h-5" />,
   },
   {
-    path: "https://www.linkedin.com/in/codingwithmuhib/",
+    path: "https://www.linkedin.com/in/physiospott/",
     icon: <RiLinkedinFill className="group-hover:text-white w-4 h-5" />,
   },
 ];
 
 const quickLinks01 = [
-  {
-    path: "/home",
-    display: "Home",
-  },
-  {
-    path: "/",
-    display: "About Us",
-  },
-  {
-    path: "/services",
-    display: "Services",
-  },
-  {
-    path: "/",
-    display: "Blog",
-  },
+  { path: "/home", display: "Home" },
+  { path: "/about", display: "About Us" },
+  { path: "/services", display: "Services" },
+  { path: "/blog", display: "Blog" },
 ];
 
 const quickLinks02 = [
-  {
-    path: "/find-a-doctor",
-    display: "Find a Doctor",
-  },
-  {
-    path: "/",
-    display: "Request an Appointment",
-  },
-  {
-    path: "/",
-    display: "Find a Location",
-  },
-  {
-    path: "/",
-    display: "Get a Opinion",
-  },
+  { path: "/find-a-therapist", display: "Find a Therapist" },
+  { path: "/book-appointment", display: "Book Appointment" },
+  { path: "/locations", display: "Find a Location" },
+  { path: "/virtual-care", display: "Virtual Consultation" },
 ];
 
 const quickLinks03 = [
-  {
-    path: "/",
-    display: "Donate",
-  },
-  {
-    path: "/contact",
-    display: "Contact Us",
-  },
+  { path: "/contact", display: "Contact Us" },
+  { path: "/faq", display: "FAQs" },
+  { path: "/support", display: "Support" },
 ];
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="pt-16 pb-10">
+    <footer className="pt-16 pb-10 bg-gray-50">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
+          {/* Logo & Socials */}
           <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="PhysioSpot Logo" />
             <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
-              Copyright © {year} developed by Muhibur Rahman all rights
-              reserved.
+              &copy; {year} PhysioSpot. All rights reserved.
             </p>
 
             <div className="flex items-center gap-3 mt-4">
               {socialLinks.map((link, index) => (
-                <Link
+                <a
                   key={index}
-                  to={link.path}
-                  className=" w-[36px] h-[36px] rounded-full border border-solid border-[#181A1E] flex  items-center justify-center  group hover:bg-[#0067FF] hover:border-none"
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[36px] h-[36px] rounded-full border border-solid border-[#181A1E] flex items-center justify-center group hover:bg-[#0067FF] hover:border-none"
                 >
                   {link.icon}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] text-headingColor mb-6">
               Quick Links
@@ -110,7 +84,7 @@ const Footer = () => {
               {quickLinks01.map((item, index) => (
                 <li key={index} className="mb-4">
                   <Link
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400] text-textColor hover:text-[#0067FF]"
                     to={item.path}
                   >
                     {item.display}
@@ -120,6 +94,7 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* I want to: */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] text-headingColor mb-6">
               I want to:
@@ -128,7 +103,7 @@ const Footer = () => {
               {quickLinks02.map((item, index) => (
                 <li key={index} className="mb-4">
                   <Link
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400] text-textColor hover:text-[#0067FF]"
                     to={item.path}
                   >
                     {item.display}
@@ -138,6 +113,7 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Support */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] text-headingColor mb-6">
               Support
@@ -146,7 +122,7 @@ const Footer = () => {
               {quickLinks03.map((item, index) => (
                 <li key={index} className="mb-4">
                   <Link
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400] text-textColor hover:text-[#0067FF]"
                     to={item.path}
                   >
                     {item.display}

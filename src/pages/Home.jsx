@@ -30,10 +30,8 @@ const Home = () => {
                   We help patients live a healthy, longer life.
                 </h1>
                 <p className="text__para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Natus quaerat cumque fugit, perspiciatis cum nemo aperiam, aut
-                  quia earum amet architecto, modi odio. Soluta unde ducimus
-                  perferendis?
+                  Your dedicated partner in pain relief, injury recovery, and lasting wellness right here in Jabalpur. Our expert physiotherapists create personalized plans to get you back to your best.
+
                 </p>
                 <button className="btn">Request an Appointment </button>
               </div>
@@ -87,7 +85,7 @@ const Home = () => {
         <div className="container ">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">
-              Providing the best medical services
+              Providing the best Physiotherapy
             </h2>
             <p className="text__para text-center">
               World-class care for everyone. Our health System offers unmatched,
@@ -106,8 +104,9 @@ const Home = () => {
                   Find a Doctor
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                  Connect with certified physiotherapists near you. Our specialists
+                  provide personalized treatment plans for pain relief, sports
+                  injuries, and long-term recovery.
                 </p>
 
                 <Link
@@ -129,8 +128,9 @@ const Home = () => {
                   Find a Location
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                  Visit clinics across the city. Modern facilities,
+                  accessible locations, and expert physiotherapists to support your
+                  recovery journey.
                 </p>
 
                 <Link
@@ -151,8 +151,8 @@ const Home = () => {
                   Book Appointment
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                  Schedule your physiotherapy session online. Choose your preferred
+                  specialist, clinic, and time slot for hassle-free bookings.
                 </p>
 
                 <Link
@@ -172,12 +172,12 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
-            <h2 className="heading text-center">Our medical services</h2>
+            <h2 className="heading text-center">Our Services</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+              From pain relief to injury recovery, we provide trusted physiotherapy solutions.
             </p>
           </div>
+
 
           <ServicesList />
         </div>
@@ -189,24 +189,25 @@ const Home = () => {
             {/* =========== feature content ============ */}
             <div className="xl:w-[670px]">
               <h2 className="heading">
-                Get virtual treatment <br /> anytime.
+                Get Virtual Physiotherapy <br /> Anytime, Anywhere
               </h2>
               <ul className="pl-4">
-                <li className="text__para ">
-                  1. Schedule the appointment directly.
-                </li>
-                <li className="text__para ">
-                  2. Search for your physician here, and contact their office.
+                <li className="text__para">
+                  1. Book your physiotherapy session online in just a few clicks.
                 </li>
                 <li className="text__para">
-                  3. View our physicians who are accepting new patients, use the
-                  online scheduling tool to select an appointment time.
+                  2. Connect with certified physiotherapists through secure video calls.
+                </li>
+                <li className="text__para">
+                  3. Receive guided exercises, posture correction, and pain management
+                  programs from the comfort of your home.
                 </li>
               </ul>
-              <Link to="/">
+              <Link to="/virtual-care">
                 <button className="btn">Learn More</button>
               </Link>
             </div>
+
 
             {/* ========= feature img ======== */}
             <div className="relative z-10  xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
@@ -246,11 +247,11 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
-            <h2 className="heading text-center">Our great doctors</h2>
+            <h2 className="heading text-center">Meet Our Specialists</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+              Certified physiotherapists providing trusted care for every patient.
             </p>
+
           </div>
 
           <DoctorsList />
@@ -280,8 +281,8 @@ const Home = () => {
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">What our patient say</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+                Real stories from patients who recovered with PhysioSpot’s expert care.
+
             </p>
           </div>
 
