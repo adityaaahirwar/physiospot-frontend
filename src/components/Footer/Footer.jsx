@@ -34,11 +34,12 @@ const quickLinks01 = [
 ];
 
 const quickLinks02 = [
-  { path: "/find-a-therapist", display: "Find a Therapist" },
-  { path: "/book-appointment", display: "Book Appointment" },
-  { path: "/locations", display: "Find a Location" },
-  { path: "/virtual-care", display: "Virtual Consultation" },
+  { path: "/privacy-policy", display: "Privacy Policy" },
+  { path: "/terms-and-conditions", display: "Terms & Conditions" },
+  { path: "/refund-policy", display: "Refund Policy" },
+  { path: "/terms-of-service", display: "Terms of Service" },
 ];
+
 
 const quickLinks03 = [
   { path: "/contact", display: "Contact Us" },
@@ -97,7 +98,7 @@ const Footer = () => {
           {/* I want to: */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] text-headingColor mb-6">
-              I want to:
+              Learn more
             </h2>
             <ul>
               {quickLinks02.map((item, index) => (
