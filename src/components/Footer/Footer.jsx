@@ -28,9 +28,10 @@ const socialLinks = [
 
 const quickLinks01 = [
   { path: "/home", display: "Home" },
-  { path: "/about", display: "About Us" },
+  // Remove or add only if these routes exist
+  // { path: "/about", display: "About Us" },
+  // { path: "/blog", display: "Blog" },
   { path: "/services", display: "Services" },
-  { path: "/blog", display: "Blog" },
 ];
 
 const quickLinks02 = [
@@ -39,7 +40,6 @@ const quickLinks02 = [
   { path: "/refund-policy", display: "Refund Policy" },
   { path: "/terms-of-service", display: "Terms of Service" },
 ];
-
 
 const quickLinks03 = [
   { path: "/contact", display: "Contact Us" },
@@ -51,12 +51,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="pt-16 pb-10 bg-gray-50">
+    <footer className="pt-16 pb-10 bg-gray-50 border-t border-gray-200">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           {/* Logo & Socials */}
           <div>
-            <img src={logo} alt="PhysioSpot Logo" />
+            <img src={logo} alt="PhysioSpot Logo" className="w-[150px]" />
             <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
               &copy; {year} PhysioSpot. All rights reserved.
             </p>
@@ -68,7 +68,7 @@ const Footer = () => {
                   href={link.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-[36px] h-[36px] rounded-full border border-solid border-[#181A1E] flex items-center justify-center group hover:bg-[#0067FF] hover:border-none"
+                  className="w-[36px] h-[36px] rounded-full border border-solid border-[#181A1E] flex items-center justify-center group hover:bg-[#0067FF] hover:border-[#0067FF]"
                 >
                   {link.icon}
                 </a>
@@ -95,10 +95,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* I want to: */}
+          {/* Learn More */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] text-headingColor mb-6">
-              Learn more
+              Learn More
             </h2>
             <ul>
               {quickLinks02.map((item, index) => (
