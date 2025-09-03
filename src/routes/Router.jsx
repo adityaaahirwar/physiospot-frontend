@@ -12,6 +12,12 @@ import DoctorDetails from "../pages/Doctors/DoctorDetails";
 import Contact from "../pages/Contact";
 import CheckoutSuccess from "../pages/CheckoutSuccess";
 
+// Newly added pages
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TermsAndConditions from "../pages/TermsAndConditions";
+import RefundPolicy from "../pages/RefundPolicy";
+import TermsOfService from "../pages/TermsOfService";
+
 const Router = () => {
   return (
     <Routes>
@@ -20,6 +26,8 @@ const Router = () => {
       <Route path="/doctors" element={<Doctors />} />
       <Route path="/doctors/:id" element={<DoctorDetails />} />
       <Route path="/services" element={<Services />} />
+
+      {/* User Dashboard */}
       <Route
         path="/users/profile/me"
         element={
@@ -28,6 +36,8 @@ const Router = () => {
           </ProtectedRoute>
         }
       />
+
+      {/* Doctor Dashboard */}
       <Route
         path="/doctors/profile/me"
         element={
@@ -37,10 +47,19 @@ const Router = () => {
         }
       />
 
+      {/* Auth */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<SignUp />} />
+
+      {/* Other Pages */}
       <Route path="/contact" element={<Contact />} />
       <Route path="/checkout-success" element={<CheckoutSuccess />} />
+
+      {/* Legal Pages */}
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route path="/refund-policy" element={<RefundPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
     </Routes>
   );
 };
