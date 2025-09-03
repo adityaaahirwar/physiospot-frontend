@@ -17,6 +17,8 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import RefundPolicy from "../pages/RefundPolicy";
 import TermsOfService from "../pages/TermsOfService";
+import Faq from "../pages/Faqs";        // ✅ Added import
+import Support from "../pages/Support"; // ✅ Added import
 
 const Router = () => {
   return (
@@ -53,6 +55,8 @@ const Router = () => {
 
       {/* Other Pages */}
       <Route path="/contact" element={<Contact />} />
+      <Route path="/faq" element={<Faq />} />
+      <Route path="/support" element={<Support />} />
       <Route path="/checkout-success" element={<CheckoutSuccess />} />
 
       {/* Legal Pages */}
