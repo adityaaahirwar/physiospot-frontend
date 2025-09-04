@@ -17,7 +17,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import RefundPolicy from "../pages/RefundPolicy";
 import TermsOfService from "../pages/TermsOfService";
-import Faq from "../pages/Faqs";        // ✅ Added import
+import Faq from "../pages/Faq"
 import Support from "../pages/Support"; // ✅ Added import
 
 const Router = () => {
